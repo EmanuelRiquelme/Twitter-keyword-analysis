@@ -103,11 +103,3 @@ class Keyword_oracle():
         plt.xlabel("Engagement")
         plt.ylabel("Emotions Overall")
         return fig
-
-if __name__ == "__main__":
-    file_name ='Graham Potter'
-    Keyword_oracle = Keyword_oracle(file_name,
-                                    keyphrase_ngram_range = (1,2),
-                                    diversity=0.3,top_n=3)
-    Keyword_oracle.plot()
-    print(Keyword_oracle.return_table())
